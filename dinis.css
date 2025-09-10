@@ -1,0 +1,6 @@
+body {
+    text-align: center; 
+    background-image: url(cr.png);
+    background-size: cover; 
+    border: 10px solid yellow;
+}

@@ -1,0 +1,76 @@
+section img {
+    height: 100px;
+    object-fit: cover;
+}
+/* Галерея: фото в ряд */
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+section figure {
+    margin: 0;
+}
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Хедер */
+header {
+    background-color: #692424;
+    color: white;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #9906b6; /* золотой при наведении */
+}
+
+/* Основной блок */
+main {
+    padding: 40px 20px;
+    background-color: white;
+    color: black;
+}
+
+main img {
+    max-width: 80%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+}
+
+figcaption {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Футер */
+footer {
+    background-color: #f1f1f1;
+    padding: 50px;
+    margin-top: 40px;
+    border-top: 2px solid #ccc;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer a:hover {
+    color: #3333ff; /* меняется цвет e-mail при наведении */
+}
