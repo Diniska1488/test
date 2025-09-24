@@ -1,0 +1,28 @@
+body {
+    font-family: italic, sans-serif;
+    text-align: center;
+}
+
+/* Контейнер с flex */
+.container {
+    display: flex;              /* включаем flexbox */
+    justify-content: center;    /* выравнивание по горизонтали */
+    align-items: center;        /* выравнивание по вертикали */
+    gap: 70px;    
+    flex-wrap:wrap ;              /* расстояние между блоками */
+    margin-top: 100px;
+}
+
+/* Стили для блоков */
+.box img {
+    width: 400px;
+    height: 400px;
+    color: white;
+  
+    display: flex;              /* чтобы цифра была по центру */
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+}
+
+
