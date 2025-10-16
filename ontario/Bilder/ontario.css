@@ -11,6 +11,70 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     max-width: 93.5%;
 }
+#videos {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(67, 37, 107, 0.35); 
+  border-radius: 24px;
+  margin: 60px auto;
+  max-width: 1270px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  
+}
+
+#videos h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 70px;
+  margin-top: 30px;
+
+  
+}
+
+.video-card {
+  flex: 0 0 29%;  /* width */
+  height: 150px;   /* make taller */
+  max-width: 600px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+.video-header {
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+  margin: 20px 0;
+}
+
+
+.video-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+}
+
+.video-card video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 24px;
+  object-fit: cover;
+ ;
+}
 
 .fun-facts-cards {
     display: flex;
