@@ -525,13 +525,11 @@ html {
     margin-top: 10px;
 }
 footer {
-  background: rgba(255, 0, 128, 0.35);  /* glassy purple */
+  background: rgba(240, 44, 181, 0.767);  /* glassy purple */
   color: #fff;
   text-align: center;
   padding: 30px 20px;
   border-radius: 16px;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   box-shadow: 0 8px 32px rgba(0,0,0,0.18);
   margin: 40px auto 20px auto;
   max-width: 95%;
@@ -544,7 +542,8 @@ footer a {
 }
 
 footer a:hover {
-  color: #EAD94C;       /* hover color */
+  color: #EAD94C;   
+  text-decoration: underline;    /* hover color */
 }
 
 footer p {
