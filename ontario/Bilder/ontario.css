@@ -1,29 +1,26 @@
+/* Seksjon om Ontario */
 #About {
     font-size: 20px;
-    background: rgba(132, 0, 255, 0.45);
-    border-radius: 18px;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
+    background: rgba(132, 0, 255, 0.45); /* Gjennomsiktig lilla bakgrunn */
+    border-radius: 18px; /* Runde hjørner */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18); /* Skyggeeffekt */
     padding: 32px 28px;
     margin: 32px auto;
     color: #fff;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(8px); /* Glass-effekt */
     max-width: 93.5%;
 }
+
+/* Videoseksjon med glass-effekt */
 #videos {
   text-align: center;
   padding: 60px 20px;
-  background: rgba(67, 37, 107, 0.35); 
+  background: rgba(67, 37, 107, 0.35);
   border-radius: 24px;
   margin: 60px auto;
   max-width: 1270px;
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.18);
   color: #fff;
-  
 }
 
 #videos h2 {
@@ -33,16 +30,16 @@
   text-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
 
+/* Videoer i rad med mellomrom */
 .video-container {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   gap: 70px;
   margin-top: 30px;
-
-  
 }
 
+/* Enkelt videokort */
 .video-card {
   flex: 0 0 29%;  /* width */
   height: 150px;   /* make taller */
@@ -61,7 +58,7 @@
   margin: 20px 0;
 }
 
-
+/* Hover-effekt på kort */
 .video-card:hover {
   transform: scale(1.03);
   box-shadow: 0 12px 40px rgba(0,0,0,0.35);
@@ -76,6 +73,7 @@
  ;
 }
 
+/* Fun facts – kortlayout */
 .fun-facts-cards {
     display: flex;
     flex-wrap: wrap;
@@ -84,6 +82,8 @@
     margin: 40px auto;
     max-width: 1500px;
 }
+
+/* Et enkelt faktakort */
 .fun-fact-card {
     background: rgba(111, 115, 210, 0.40);
     border-radius: 18px;
@@ -99,6 +99,8 @@
     transition: transform 0.2s;
     border: 10px solid #83C9F4;
 }
+
+/* Ved hover – endrer farge og skalering */
 .fun-fact-card:hover {
     transform: scale(1.04);
     box-shadow: 0 8px 32px rgba(0,0,0,0.18);
@@ -185,6 +187,8 @@
     margin: 40px auto;
     max-width: 1000px;
 }
+
+/* === Restauranter === */
 .dining-card {
     background: rgba(234, 217, 76, 0.35);
     border-radius: 18px;
@@ -380,15 +384,15 @@ img[src="CN2.jpg"].attraction-img {
     display: block;
 }
 
-
-
-
+/* Navigasjonslenker – fargeendring ved hover */
 nav a:nth-child(1):hover { background: #FF1B1C; color: white; }
 nav a:nth-child(2):hover { background: #FF7F11; color: white; }
 nav a:nth-child(3):hover { background: #EAD94C; color: white; }
 nav a:nth-child(4):hover { background: #6F73D2; color: white; }
 nav a:nth-child(5):hover { background: purple; color: white; }
 nav a:nth-child(6):hover { background: #83C9F4; color: white; }
+
+/* Header – bakgrunnsbilde og sentrert tekst */
 header {
     background-image: url('turona.jpg');
     background-size: cover;
@@ -465,50 +469,35 @@ html {
 }
 
  h2 {text-align: left;}
- /* ontario.css */
 
-/* ontario.css */
-
+/* Attraksjoner med glass-effekt */
 .attraction-tile {
     display: flex;
     align-items: center;
     gap: 80px;
     margin-bottom: 40px;
     
-    /* === СТИЛИ ДЛЯ ЭФФЕКТА СТЕКЛА === */
-
-    /* 1. Меняем сплошной фон на полупрозрачный */
-    background: rgba(67, 37, 107, 0.35); /* Белый, 25% непрозрачности */
-
-    /* 2. Добавляем размытие фона (блюр) */
+    
+    background: rgba(67, 37, 107, 0.35);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(10px); /* Для поддержки старых версий Safari */
-
-    /* 3. Добавляем тонкую светлую рамку, чтобы подчеркнуть край "стекла" */
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    
-    /* ================================== */
-
-    padding: 20px;
-    border-radius: 16px; /* Можно сделать скругление чуть больше */
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Более выраженная тень */
+     border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); 
 }
 #Attractions {
-    /* ЗАМЕНИТЕ 'your-background-image.jpg' на ссылку на вашу картинку */
+    
     background-image: url(trnt2.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Картинка будет оставаться на месте при прокрутке */
-    
-    padding: 40px 20px; /* Добавим отступы, чтобы плитки не прилипали к краям */
+    background-attachment: fixed;
+    padding: 40px 20px; 
     border-radius: 20px;
     margin-top: 30px;
 }
-   /* Делаем текст внутри плиток светлым и читабельным */
 .attraction-info h3,
 .attraction-info p {
     color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Тень для текста */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
 
 
 }
@@ -524,6 +513,7 @@ html {
     line-height: 1.3;
     margin-top: 10px;
 }
+/* === Bunntekst === */
 footer {
   background: rgba(240, 44, 181, 0.767);  /* glassy purple */
   color: #fff;
